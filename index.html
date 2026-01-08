@@ -3,245 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ohidul Islam - Freelance Digital Marketing, SEO & Web Development Expert">
+    <meta name="description" content="Ohidul Islam - Expert Freelancer in Digital Marketing, SEO & Web Development">
     <title>Ohidul Islam - Freelance Expert</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <div class="logo" id="logo">Ohidul Islam</div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#cases">Case Studies</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#contact" class="hire-btn">Hire Me</a>
-            <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-aos="fade-in">
-                    <h1 id="slide1-title">Professional Freelancer in Digital Marketing, SEO & Web Development</h1>
-                    <p id="slide1-subtitle">Grow Your Business with Proven Strategies</p>
-                </div>
-                <div class="swiper-slide" data-aos="fade-in">
-                    <h1 id="slide2-title">Drive 300% Growth with SEO Expertise</h1>
-                    <p id="slide2-subtitle">Rank #1 on Google</p>
-                </div>
-                <div class="swiper-slide" data-aos="fade-in">
-                    <h1 id="slide3-title">Custom Websites That Convert</h1>
-                    <p id="slide3-subtitle">Fast, Secure, Mobile-Friendly</p>
-                </div>
+        <div class="container hero-content" data-aos="fade-up">
+            <div class="hero-left">
+                <h1>Hey There, <br>I'm <span>Ohidul Islam</span></h1>
+                <p>Expert in Digital Marketing, SEO & Web Development. Helping businesses grow with data-driven strategies and stunning websites.</p>
+                <a href="#contact" class="btn primary">Hire Me</a>
+                <a href="#portfolio" class="btn secondary">View Portfolio</a>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
-
-    <section id="about" data-aos="fade-left">
-        <div class="container about-container">
-            <img src="your-photo.jpg" alt="Ohidul Islam - Freelancer" id="about-photo">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p id="about-bio">Ohidul Islam, hailing from Kalikini, Madaripur, currently based in Dhaka, Bangladesh – a dedicated freelancer committed to driving business growth through innovative digital strategies.</p>
-                <ul>
-                    <li>Expert in On-Page & Off-Page SEO</li>
-                    <li>100+ Successful Projects</li>
-                    <li>Client Satisfaction: 98%</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" data-aos="zoom-in">
-        <div class="container">
-            <h2>My Services</h2>
-            <div class="services-grid">
-                <div class="service-card" data-aos="flip-left">
-                    <i class="fas fa-bullhorn"></i>
-                    <h3>Digital Marketing</h3>
-                    <p>Social media, email, PPC to grow your brand.</p>
-                </div>
-                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
-                    <i class="fas fa-search"></i>
-                    <h3>SEO Optimization</h3>
-                    <p>Keyword research, on/off-page to rank #1.</p>
-                </div>
-                <div class="service-card" data-aos="flip-left" data-aos-delay="400">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Custom, responsive websites that convert.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="cases" data-aos="fade-up">
-        <div class="container">
-            <h2>Case Studies</h2>
-            <div class="cases-grid">
-                <div class="case-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>E-commerce Growth</h3>
-                    <p>Challenge: Low traffic. Solution: SEO & PPC. Result: +250% sales in 6 months.</p>
-                </div>
-                <div class="case-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Business Website Redesign</h3>
-                    <p>Challenge: Old design. Solution: Modern responsive site. Result: +150% leads.</p>
-                </div>
-                <div class="case-card" data-aos="fade-up" data-aos-delay="500">
-                    <h3>SEO for Local Business</h3>
-                    <p>Challenge: No visibility. Solution: Local SEO. Result: #1 rank, +300% traffic.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" data-aos="fade-up">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-grid">
-                <form id="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-                <div class="contact-details">
-                    <p>Email: your@email.com</p>
-                    <p>Phone: +880XXXXXXXXXX</p>
-                    <p>Location: Dhaka, Bangladesh</p>
-                    <div class="social-links" id="social-links">
-                        <a href="#" id="facebook-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" id="linkedin-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" id="upwork-link"><i class="fab fa-upwork"></i></a>
+            <div class="hero-right">
+                <img src="ohidulislam.jpg" alt="Ohidul Islam" class="hero-img">
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>05+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Ohidul Islam. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Admin Panel -->
-    <section id="admin" style="display: none;">
-        <div class="container">
-            <h2>Personal Admin Panel</h2>
-            <form id="admin-form">
-                <label for="logo">Logo Text:</label>
-                <input type="text" id="logo" value="Ohidul Islam" required>
-                <label for="slide1-title">Slide 1 Title:</label>
-                <input type="text" id="slide1-title" value="Professional Freelancer in Digital Marketing, SEO & Web Development" required>
-                <label for="slide1-subtitle">Slide 1 Subtitle:</label>
-                <input type="text" id="slide1-subtitle" value="Grow Your Business with Proven Strategies" required>
-                <label for="slide2-title">Slide 2 Title:</label>
-                <input type="text" id="slide2-title" value="Drive 300% Growth with SEO Expertise" required>
-                <label for="slide2-subtitle">Slide 2 Subtitle:</label>
-                <input type="text" id="slide2-subtitle" value="Rank #1 on Google" required>
-                <label for="slide3-title">Slide 3 Title:</label>
-                <input type="text" id="slide3-title" value="Custom Websites That Convert" required>
-                <label for="slide3-subtitle">Slide 3 Subtitle:</label>
-                <input type="text" id="slide3-subtitle" value="Fast, Secure, Mobile-Friendly" required>
-                <label for="about-photo">About Photo URL:</label>
-                <input type="text" id="about-photo" value="your-photo.jpg" required>
-                <label for="about-bio">About Bio:</label>
-                <textarea id="about-bio" required>Ohidul Islam, hailing from Kalikini, Madaripur, currently based in Dhaka, Bangladesh – a dedicated freelancer committed to driving business growth through innovative digital strategies.</textarea>
-                <label for="facebook-link">Facebook Link:</label>
-                <input type="text" id="facebook-link" value="#" required>
-                <label for="linkedin-link">LinkedIn Link:</label>
-                <input type="text" id="linkedin-link" value="#" required>
-                <label for="upwork-link">Upwork Link:</label>
-                <input type="text" id="upwork-link" value="#" required>
-                <button type="submit" class="btn">Save Changes</button>
-            </form>
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>Ohidul Islam, hailing from Kalikini, Madaripur, currently based in Dhaka, Bangladesh – a passionate freelancer specializing in Digital Marketing, SEO, and Web Development. My goal is to help businesses grow online with powerful, conversion-focused solutions.</p>
+            <div class="social-links">
+                <a href="#" id="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" id="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="#" id="upwork"><i class="fab fa-upwork"></i></a>
+            </div>
         </div>
     </section>
 
-    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Google Ads</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="bar"><div class="progress" style="width:95%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>SEO</span>
+                        <span>98%</span>
+                    </div>
+                    <div class="bar"><div class="progress" style="width:98%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Web Development</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar"><div class="progress" style="width:90%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Social Media</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="bar"><div class="progress" style="width:92%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- অন্য সেকশনগুলো যোগ করতে পারি পরে, কোড লম্বা হয়ে যাবে -->
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1200 });
-        const heroSlider = new Swiper('.hero-slider', {
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-                delay: 5000,
-            },
-        });
-
-        // Theme Toggle
-        document.getElementById('theme-toggle').addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-        });
-        if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
-
-        // Admin Panel
-        if (window.location.hash === '#admin') document.getElementById('admin').style.display = 'block';
-        document.getElementById('admin-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            localStorage.setItem('logo', this.logo.value);
-            localStorage.setItem('slide1-title', this['slide1-title'].value);
-            localStorage.setItem('slide1-subtitle', this['slide1-subtitle'].value);
-            localStorage.setItem('slide2-title', this['slide2-title'].value);
-            localStorage.setItem('slide2-subtitle', this['slide2-subtitle'].value);
-            localStorage.setItem('slide3-title', this['slide3-title'].value);
-            localStorage.setItem('slide3-subtitle', this['slide3-subtitle'].value);
-            localStorage.setItem('about-photo', this['about-photo'].value);
-            localStorage.setItem('about-bio', this['about-bio'].value);
-            localStorage.setItem('facebook-link', this['facebook-link'].value);
-            localStorage.setItem('linkedin-link', this['linkedin-link'].value);
-            localStorage.setItem('upwork-link', this['upwork-link'].value);
-            alert('Changes saved! Reload the page.');
-            window.location.hash = '';
-            window.location.reload();
-        });
-
-        // Load Saved Data
-        window.addEventListener('load', () => {
-            document.getElementById('logo').innerText = localStorage.getItem('logo') || 'Ohidul Islam';
-            document.getElementById('slide1-title').innerText = localStorage.getItem('slide1-title') || 'Professional Freelancer in Digital Marketing, SEO & Web Development';
-            document.getElementById('slide1-subtitle').innerText = localStorage.getItem('slide1-subtitle') || 'Grow Your Business with Proven Strategies';
-            document.getElementById('slide2-title').innerText = localStorage.getItem('slide2-title') || 'Drive 300% Growth with SEO Expertise';
-            document.getElementById('slide2-subtitle').innerText = localStorage.getItem('slide2-subtitle') || 'Rank #1 on Google';
-            document.getElementById('slide3-title').innerText = localStorage.getItem('slide3-title') || 'Custom Websites That Convert';
-            document.getElementById('slide3-subtitle').innerText = localStorage.getItem('slide3-subtitle') || 'Fast, Secure, Mobile-Friendly';
-            document.getElementById('about-photo').src = localStorage.getItem('about-photo') || 'your-photo.jpg';
-            document.getElementById('about-bio').innerText = localStorage.getItem('about-bio') || 'Ohidul Islam, hailing from Kalikini, Madaripur, currently based in Dhaka, Bangladesh – a dedicated freelancer committed to driving business growth through innovative digital strategies.';
-            document.getElementById('facebook-link').href = localStorage.getItem('facebook-link') || '#';
-            document.getElementById('linkedin-link').href = localStorage.getItem('linkedin-link') || '#';
-            document.getElementById('upwork-link').href = localStorage.getItem('upwork-link') || '#';
-        });
-
-        // EmailJS for Real Form (Replace with your ID)
-        (function(){
-            emailjs.init("your_emailjs_user_id"); // Get from EmailJS dashboard
-        })();
-
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            emailjs.sendForm('your_service_id', 'your_template_id', this)
-                .then(() => {
-                    alert('Message sent successfully!');
-                }, (error) => {
-                    alert('Failed to send message.');
-                });
-            this.reset();
-        });
+        AOS.init({duration: 1000});
     </script>
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
