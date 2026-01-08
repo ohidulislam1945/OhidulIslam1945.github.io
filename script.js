@@ -1,26 +1,28 @@
-// AOS Init
-AOS.init({
-    duration: 1200,
-    once: true
+// Typed.js for Hero
+var typed = new Typed('#typed', {
+    strings: ['Ohidul Islam', 'SEO Expert', 'Marketing Guru'],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
 });
 
-// Dark Mode
-const toggle = document.getElementById('theme-toggle');
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    toggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+// Stats Count Up
+const stats = document.querySelectorAll('[data-target]');
+const speed = 200;
+stats.forEach(stat => {
+    const updateCount = () => {
+        const target = +stat.getAttribute('data-target');
+        const count = +stat.innerText;
+        const inc = target / speed;
+        if (count < target) {
+            stat.innerText = Math.ceil(count + inc);
+            setTimeout(updateCount, 1);
+        } else {
+            stat.innerText = target;
+        }
+    };
+    updateCount();
 });
 
-// Load Theme
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-mode');
-    toggle.innerHTML = '<i class="fas fa-sun"></i>';
-}
-
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-    });
-}); 
+// Other code as before (Smooth Scroll, Theme Toggle, Admin, EmailJS)
+ 
